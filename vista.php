@@ -20,13 +20,19 @@
         <tbody>
     <?php 
     include "conexion.php";
-foreach ($datos as $key => $value) {
- echo "<tr>
-<td>value['id']</td> 
-<td>value['titulo']</td> 
-<td>value['autor']</td> 
-<td>value['fecha']</td> 
- ";
+foreach ($datos as $row) {
+
+    echo '
+    <tr>
+    <td>
+    '.$row['id'].'
+    </td>
+    <td>
+    '.$row['titulo'].'</td>
+    <td>'.$row['autor'].'</td>
+    <td>'.$row['fecha'].'</td>
+  ' ;   
+  
 }
     ?>
 
