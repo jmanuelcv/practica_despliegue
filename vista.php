@@ -18,25 +18,25 @@
             </tr>
         </thead>
         <tbody>
-    <?php 
-    include "conexion.php";
-    foreach ($datos as $row) {
-        echo '<tr>
-        <td>
-            '.$row['id'].'
-        </td>
-        <td>
-            '.$row['titulo'].' 
-        </td>
-        <td>
-            '.$row['autor'].'
-        </td>
-        <td>
-            '.$row['fecha'].'
-        </td>
-        </tr>';   
-    }
-    ?>
+            <?php 
+            include "conexion.php";
+            foreach ($datos as $row) {
+                echo '<tr>
+                <td>
+                    '.$row['id'].'
+                </td>
+                <td>
+                    '.$row['titulo'].' 
+                </td>
+                <td>
+                    '.$row['autor'].'
+                </td>
+                <td>
+                    '.$row['fecha'].'
+                </td>
+                </tr>';   
+            }
+            ?>
         </tbody>
     </table>
 </body>
